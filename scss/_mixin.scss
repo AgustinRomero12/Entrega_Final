@@ -1,0 +1,19 @@
+@mixin estiloFuente($color, $tamanioFuente, $alineacion){
+    color:$color;
+    font-size:$tamanioFuente;
+    text-align:$alineacion;
+}
+
+h1{
+    @include estiloFuente(green, 2rem, center);
+}
+
+@mixin flex-row-center{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.flexRowCenter{
+    @include flex-row-center;
+}
